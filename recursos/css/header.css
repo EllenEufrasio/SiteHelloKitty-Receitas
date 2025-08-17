@@ -1,0 +1,81 @@
+header {
+    background: #73B9E5;
+    /* Vertical e Horizontal */
+    padding: 0.3% 4%;
+    display:block flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    /* Configurações da fonte */
+    font-family: 'Jockey One', sans-serif;
+}   
+
+/* Estilizando a logo inserida, que está dentro da header, pela class "logo" */
+header .logo img {
+    height: 65px;
+}   
+
+
+/* <!-- MENU DE NAVEGAÇÃO - lista --> */
+/* Palavras - Receitas,Galeria,etc */
+/* <nav> <ul> </ul> </nav>*/
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 200px;
+}
+
+/* <!-- Links do menu  --> */
+/* <nav> <ul> <li> <a> </a> </li> </ul> </nav>*/
+header nav ul li a {
+    text-decoration: none;
+    color: #105986;
+    font-size: 32px;
+    transition: 0.3s;
+}
+
+/* <!-- Links do menu - Efeito  --> */
+/* <nav> <ul> <li> <a> </a> </li> </ul> </nav>*/
+header nav ul li a:hover {
+    color: #062436;
+}
+
+/* --- BARRA DE PESQUISA --- */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #105986;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+/* Caixa de texto dentro da barra pesquisa - input */
+.search-box input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #73B9E5;
+    width: 150px;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.search-box button img{
+    height: 24px;
+}
+.search-box button:hover {
+    transform: scale(1.1);
+}
